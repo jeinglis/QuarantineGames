@@ -1,10 +1,11 @@
-<button mat-button [matMenuTriggerFor]="aboveMenu">Home</button>
-
-<button mat-button [matMenuTriggerFor]="belowMenu">D&D</button>
-<mat-menu #belowMenu="matMenu" yPosition="below">
-  <button mat-menu-item>Characters</button>
-  <button mat-menu-item>Links</button>
-</mat-menu>
+<div id="container">
+  <button mat-button class="menuButtons" [routerLink]="['Home']">Home</button>
+  <button mat-button class="menuButtons" [matMenuTriggerFor]="belowMenu" [routerLink]="['dnd']">D&D</button>
+  <mat-menu #belowMenu="matMenu" yPosition="below">
+    <button mat-menu-item [routerLink]="['dnd-characters']">Characters</button>
+    <button mat-menu-item [routerLink]="['dnd-links']">Links</button>
+  </mat-menu>
+</div>
 
 <!-- <button mat-button [matMenuTriggerFor]="game2">Catan</button>
 <mat-menu #beforeMenu="matMenu" xPosition="before">

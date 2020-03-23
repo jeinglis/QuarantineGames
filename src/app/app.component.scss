@@ -1,0 +1,13 @@
+.container {
+  display:flex;
+  flex-direction: column;
+  height: 100%;
+  #navigation{
+    height:10%;
+  }
+  #router-outlet{
+    text-align:center;
+    background:whitesmoke;
+    flex-grow:1;
+  }
+}
