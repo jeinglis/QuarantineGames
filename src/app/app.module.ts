@@ -9,11 +9,13 @@ import { environment } from '../environments/environment';
 import { NavigationComponent } from './navigation/navigation.component';
 import { MatMenuModule } from '@angular/material/menu';
 import {MatButtonModule } from '@angular/material/button';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavigationComponent
+    NavigationComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
