@@ -11,7 +11,6 @@ import { MatMenuModule } from '@angular/material/menu';
 import {MatButtonModule } from '@angular/material/button';
 import { HomeComponent } from './home/home.component';
 import { DndComponent } from './dnd/dnd.component';
-import { DndCharacterComponent } from './dnd-character/dnd-character.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +18,6 @@ import { DndCharacterComponent } from './dnd-character/dnd-character.component';
     NavigationComponent,
     HomeComponent,
     DndComponent,
-    DndCharacterComponent
   ],
   imports: [
     BrowserModule,
