@@ -6,11 +6,11 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
-import { NavigationComponent } from './navigation/navigation.component';
+import { NavigationComponent } from './components/navigation/navigation.component';
 import { MatMenuModule } from '@angular/material/menu';
 import {MatButtonModule } from '@angular/material/button';
-import { HomeComponent } from './home/home.component';
-import { DndComponent } from './dnd/dnd.component';
+import { HomeComponent } from './pages/home/home.component';
+import { DndComponent } from './pages/dnd/dnd.component';
 
 @NgModule({
   declarations: [
