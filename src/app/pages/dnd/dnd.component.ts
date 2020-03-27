@@ -15,7 +15,7 @@ export class DndComponent implements OnInit {
   constructor() {
     this.characters = [
       {
-        avatar: 'path',
+        avatar: '..\..\assets\dwarf-cleric.jpg',
         name: 'Drax',
         level: 1,
         experiencePoints: 0,

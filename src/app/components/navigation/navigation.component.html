@@ -1,10 +1,7 @@
 <div id="container">
   <button mat-button class="menuButtons" [routerLink]="['home']">Home</button>
-  <button mat-button class="menuButtons" [matMenuTriggerFor]="belowMenu" [routerLink]="['dnd']">D&D</button>
-  <mat-menu #belowMenu="matMenu" yPosition="below">
-    <button mat-menu-item [routerLink]="['dnd-characters']">Characters</button>
-    <button mat-menu-item [routerLink]="['dnd-links']">Links</button>
-  </mat-menu>
+  <button mat-button class="menuButtons" [routerLink]="['schedule']">Schedule</button>
+  <button mat-button class="menuButtons"  [routerLink]="['dnd']">D&D</button>
 </div>
 
 <!-- <button mat-button [matMenuTriggerFor]="game2">Catan</button>
@@ -14,7 +11,7 @@
 </mat-menu> -->
 
 
-<!-- <button mat-button [matMenuTriggerFor]="afterMenu">game3</button>
+<!-- <button mat-button [matMenuTriggerFor]="afterMenu">Warhammer 40k</button>
 <mat-menu #afterMenu="matMenu" xPosition="after">
   <button mat-menu-item>Item 1</button>
   <button mat-menu-item>Item 2</button>
