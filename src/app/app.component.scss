@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Comic+Neue&display=swap');
+
+
 .container {
   display:flex;
   flex-direction: column;
   height: 100%;
   #navigation{
     height:10%;
+    min-height:10%;
   }
   #router-outlet{
     text-align:center;

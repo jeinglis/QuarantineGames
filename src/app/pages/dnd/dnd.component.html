@@ -1,0 +1,23 @@
+<div id=container>
+  <div class=character *ngFor="let character of characters">
+    <img class=avatar src={{character.avatar}}>
+
+    <div class=stats>
+         <p> name: {{character.name}}</p>
+         <p> race: {{character.race}}</p>
+         <p> class: {{character.class}}</p>
+         <p> alignment: {{character.alignment}}</p>
+         <p> level: {{character.level}}</p>
+         <p> experiencePoints: {{character.experiencePoints}}</p>
+         <p> strength: {{character.strength}}</p>
+         <p> dexterity: {{character.dexterity}}</p>
+         <p> constitution: {{character.constitution}}</p>
+         <p> intelligence: {{character.intelligence}}</p>
+         <p> wisdom: {{character.wisdom}}</p>
+         <p> charisma: {{character.charisma}}</p>
+    </div>
+    <div class=background>
+      <p>background: {{character.background}}</p>
+    </div>
+  </div>
+</div>
