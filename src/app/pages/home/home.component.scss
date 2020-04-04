@@ -1,5 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
+
+
 #container{
   height:100%;
-  background-image: url("../../../assets/tp-db.jpg");
-  background-size: cover;
+  display:flex;
+  flex-direction: column;
+
+  #banner{
+    height: 100%;
+    width:100%;
+    background-image: url("../../../assets/quarantine-games-banner-cropped.png");
+    background-size: cover;
+    font-family: 'Monoton', cursive;
+    color: red;
+  }
+
+  #calendar{
+    //height: 200px;
+    width: 100%;
+  }
+  #arrow-container {
+    // transform: translateX(-50%);
+    // left: 50%;
+    // position: absolute;
+    // margin-bottom:100px;
+      #arrow {
+        margin:auto;
+        width:170px;
+        height:80px;
+      }
+  }
+  
+
 }

@@ -11,6 +11,13 @@ import { MatMenuModule } from '@angular/material/menu';
 import {MatButtonModule } from '@angular/material/button';
 import { HomeComponent } from './pages/home/home.component';
 import { DndComponent } from './pages/dnd/dnd.component';
+import { CalendarModule, DateAdapter } from 'angular-calendar';
+import { adapterFactory } from 'angular-calendar/date-adapters/moment';
+import * as moment from 'moment';
+
+export function momentAdapterFactory() {
+  return adapterFactory(moment);
+};
 
 @NgModule({
   declarations: [
@@ -26,6 +33,7 @@ import { DndComponent } from './pages/dnd/dnd.component';
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     MatMenuModule,
     MatButtonModule,
+    CalendarModule.forRoot({ provide: DateAdapter, useFactory: momentAdapterFactory }),
   ],
   providers: [],
   bootstrap: [AppComponent]
