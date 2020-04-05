@@ -1,23 +1,25 @@
-<h1 id = link src="https://app.roll20.net"> Roll 20 Game</h1>
 <div id=container>
-  <div class=character *ngFor="let character of characters">
-    <img class=avatar src={{character.avatar}}>
-    <div class=stats>
-         <p> name: {{character.name}}</p>
-         <p> race: {{character.race}}</p>
-         <p> class: {{character.class}}</p>
-         <p> alignment: {{character.alignment}}</p>
-         <p> level: {{character.level}}</p>
-         <p> experiencePoints: {{character.experiencePoints}}</p>
-         <p> strength: {{character.strength}}</p>
-         <p> dexterity: {{character.dexterity}}</p>
-         <p> constitution: {{character.constitution}}</p>
-         <p> intelligence: {{character.intelligence}}</p>
-         <p> wisdom: {{character.wisdom}}</p>
-         <p> charisma: {{character.charisma}}</p>
-    </div>
-    <div class=background>
-      <p>background: {{character.background}}</p>
+  <a id=link href="https://app.roll20.net" target="_blank"> Roll 20 Game</a>
+  <div id=character-container>
+    <div class=character *ngFor="let character of characters">
+      <img class=avatar src={{character.avatar}}>
+      <div class=stats>
+        <p> <b class= attribute-heading>name:</b> {{character.name}}</p>
+        <p> <b class= attribute-heading>race:</b> {{character.race}}</p>
+        <p> <b class= attribute-heading>class:</b> {{character.class}}</p>
+        <p> <b class= attribute-heading>alignment:</b> {{character.alignment}}</p>
+        <p> <b class= attribute-heading>level:</b> {{character.level}}</p>
+        <p> <b class= attribute-heading>experiencePoints:</b> {{character.experiencePoints}}</p>
+        <p> <b class= attribute-heading>strength:</b> {{character.strength}}</p>
+        <p> <b class= attribute-heading>dexterity:</b> {{character.dexterity}}</p>
+        <p> <b class= attribute-heading>constitution:</b> {{character.constitution}}</p>
+        <p> <b class= attribute-heading>intelligence:</b> {{character.intelligence}}</p>
+        <p> <b class= attribute-heading>wisdom:</b> {{character.wisdom}}</p>
+        <p> <b class= attribute-heading>charisma:</b> {{character.charisma}}</p>
+      </div>
+      <div class=background>
+        <p> <b id=background-heading>background</b><br> {{character.background}}</p>
+      </div>
     </div>
   </div>
 </div>
